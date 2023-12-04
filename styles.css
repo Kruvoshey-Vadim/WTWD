@@ -1,0 +1,154 @@
+.content-container {
+    max-width: 1000px; 
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #e1e3b6;
+}
+header h2 {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #48149b;
+}
+header nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav a {
+    margin-right: 25px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0c0479;
+}
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+article {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+     width: calc(25% - 20px);
+    box-shadow: 0px 0px 5px rgba(201, 41, 121, 0.3);
+}
+article img {
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+article h2 {
+    margin-top: 0;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #2f2e2e;
+}
+
+article p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #504d4d;
+}
+
+article em {
+    font-style: italic;
+    font-size: 16px;
+    color: #5e5959;
+}
+
+article button {
+    background-color: #696969;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.login-button {
+    background-color: #aeed00;
+    color:  #0c0479;
+    border:#48149b;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 15px;
+    cursor: pointer;
+} 
+
+
+@media (max-width: 768px) {
+    header nav {
+        display: none; 
+    }
+    section {
+        flex-direction: column; 
+    }
+    article {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 959px) and (min-width: 769px) {
+    section {
+        flex-wrap: wrap; 
+    }
+    article {
+        width: calc(40% - 20px); 
+    }
+}
+
+article:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease-in-out; 
+    box-shadow: 0px 0px 10px rgba(168, 7, 87, 0.5); 
+}
+
+.mobile-menu {
+    display: none;
+    background-color: #aeed00;
+    color:  #0c0479;
+    border:#48149b;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.mobile-menu:hover + .desktop-menu {
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
+    .desktop-menu {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
